@@ -1,0 +1,131 @@
+@import url(general.css);
+
+.video-tumbanil {
+  position: relative;
+  height: 100%;
+}
+
+.recoumended-channels-section {
+}
+.recoumended-channel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 330px);
+  gap: 10px;
+}
+@media (max-width: 1920px) {
+  .recoumended-channel-grid {
+    grid-template-columns: repeat(4, 330px);
+  }
+}
+
+@media (max-width: 1660px) {
+  .recoumended-channel-grid {
+    grid-template-columns: repeat(3, 330px);
+  }
+}
+
+@media (max-width: 1350px) {
+  .recoumended-channel-grid {
+    grid-template-columns: repeat(3, 330px);
+  }
+  .sidebar .top-side,
+  .sidebar .channel-contents {
+    display: none;
+  }
+  body
+  {
+    padding-left: 40px;
+  }
+ 
+}
+
+@media (max-width: 1200px) {
+  .recoumended-channel-grid {
+    grid-template-columns: repeat(2, 330px);
+  }
+}
+
+@media (max-width: 800px) {
+  .recoumended-channel-grid {
+    grid-template-columns: repeat(1, 330px);
+  }
+}
+.recoumended-channel-body {
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+.recoumended-channels-text {
+  align-items: end;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.live-channels-text {
+  color: var(--main-text-color-right-side);
+}
+.live-channels-text:hover {
+  color: var(--main-text-color-right-side-hoverd);
+  text-decoration: underline;
+}
+.recoumended-channel {
+  flex-shrink: 1;
+  min-width: 0;
+}
+.recoumended-channel-tumbnail {
+  position: absolute;
+  width: 100%;
+  object-fit: over;
+}
+.recoumended-channel-tumbnail-body {
+  position: relative;
+  height: 190px;
+}
+.profile-image-right-contnent {
+  object-fit: cover;
+}
+.video-tumbanil-bottom-view {
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 3px;
+}
+.video-profile-main-information {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.video-profile-main-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+  cursor: pointer;
+}
+.video-profile {
+  margin-right: 10px;
+}
+.video-flex-information {
+  margin-top: 10px;
+  display: flex;
+  flex-shrink: 1;
+}
+.video-profile-id,
+.video-catgory {
+  color: var(--secound-text-color-catgorys);
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+.video-catgory:hover {
+  color: var(--main-text-color-right-side-hoverd);
+}
+
+.video-profile-main-title:hover {
+  color: var(--main-text-color-right-side-hoverd);
+}

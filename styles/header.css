@@ -1,0 +1,191 @@
+@import "./general.css";
+
+.header-continer {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: stretch;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-header-color);
+  box-shadow: 0px 2px 0.5px rgba(0, 0, 0, 0.5);
+  flex-wrap: nowrap;
+  z-index: 400;
+  padding: 0px 10px;
+}
+
+.header-twitch-logo {
+  height: 25px;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  height: 40px;
+}
+/*left section*/
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: auto;
+}
+
+.header-twitch-logo {
+  cursor: pointer;
+}
+.header-browse-text {
+  display: flex;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+.header-browse-text:hover {
+  color: rgb(169, 112, 255);
+}
+
+.header-btn-active {
+  border-bottom: 2px solid rgb(169, 112, 255);
+  padding-top: 2px;
+  color: rgb(169, 112, 255);
+}
+
+.left-side-btn {
+  display: flex;
+  gap: 30px;
+}
+
+/*middle section*/
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  height: auto;
+  margin: 0 20px;
+}
+
+.header-search-input {
+  flex: 1;
+  background-color: transparent;
+  border: 1px solid var(--secound-text-color);
+  padding: 6px 10px 6px 10px;
+  color: var(--secound-text-color);
+  border-radius: 4px 0px 0px 4px;
+  width: 0;
+  max-width: 300px;
+  z-index: 120;
+}
+.search-bar-continer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  height: 30px;
+  flex-shrink: 0;
+  min-width: 100%;
+}
+@media (max-width: 1350px) {
+  .left-side-btn {
+    display: flex;
+    gap: 10px;
+  }
+  .header-browse-text {
+    font-size: 1.19rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .left-side-btn {
+    gap: 20px;
+  }
+  .middle-section {
+    display: none;
+  }
+  .header-continer {
+    justify-content: center;
+    row-gap: 10px;
+  }
+  .header-browse-text {
+    font-size: 1.3rem;
+  }
+}
+
+.header-search-input::placeholder {
+  color: var(--secound-text-color);
+}
+
+.search-btn-svg {
+  font-size: 20px;
+}
+
+.search-svg-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-button-color);
+  height: auto !important;
+  padding: 0px 5px 0px 5px;
+  border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
+}
+/*right section*/
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  gap: 10px;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.log-in-button,
+.sign-up-button {
+  background-color: var(--main-button-color);
+  border-style: none;
+  padding: 8px 10px 8px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+.sign-up-button {
+  background-color: rgb(145, 71, 255);
+}
+.button-continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile-continer {
+  display: flex;
+  align-items: center;
+}
+/* Svg Setings */
+
+.svg-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+.user-profile {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}

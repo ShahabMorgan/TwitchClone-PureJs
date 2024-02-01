@@ -1,0 +1,8 @@
+@import "./general.css";
+
+.main-section {
+  display: flex;
+  justify-content: center;
+}
+
+

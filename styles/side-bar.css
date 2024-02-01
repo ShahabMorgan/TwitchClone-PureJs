@@ -1,0 +1,126 @@
+@import "./general.css";
+
+.sidebar {
+  position: fixed;
+  padding-top: 57px;
+  left: 0;
+  top: 0;
+  background-color: var(--main-sidebar-color);
+  color: white;
+  z-index: 99;
+  height: 100%;
+}
+
+.channels-sidebar {
+  margin-top: 5px;
+}
+
+/* Top Side 1 */
+.top-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.colaps-section,
+.sidebar-channel-sorted-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colaps-sidebar-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-channel-sorted-button:hover {
+  background-color: rgba(239, 239, 241, 0.1);
+}
+
+.for-you-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Top Side 2 */
+
+.fallowed-channels-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.sidebar-channel-sorted-button {
+  cursor: pointer;
+}
+.sidebar-channel-sorted-button,
+.colaps-section {
+  padding: 7px 7px 7px 7px;
+}
+.sidebar-channel-sorted-button {
+  margin-top: -5px;
+}
+.channel-continer {
+  padding: 7px !important;
+}
+
+/* Channel Bars */
+
+.channel-continer {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  padding: 5px;
+  gap: 5px;
+  cursor: pointer;
+}
+.channel-continer:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.channel-information {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-self: center;
+  flex: 1;
+}
+
+.channel-contents {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: start;
+  min-width: 155px;
+}
+
+.channel-live-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 4px;
+}
+
+.channel-name {
+  font-size: 1.1rem;
+}
+.live-icon {
+  background-color: rgb(255, 0, 0);
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+.tolltip {
+  display: none;
+}
+
+.channel-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.game-catgory {
+  color: var(--secound-text-color-catgorys);
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
