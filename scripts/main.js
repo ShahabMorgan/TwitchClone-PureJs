@@ -11,7 +11,8 @@ const controlersContiner = document.querySelectorAll(".controlers-flex");
 let setContnents = true;
 
 // Twitch slider
-// check
+// salam
+
 const continerImages = document.querySelector(".wraper");
 // const images = Array.from(document.querySelectorAll(".wraper > div"));
 let nextValue;
