@@ -44,7 +44,6 @@ async function importData() {
       },
     });
 
-    console.log(users);
 
     users = await users.json();
     users = users.data;
@@ -226,7 +225,6 @@ async function exportData() {
 
   // recommneded channels
   for (a = 0; a < 5; a++) {
-    console.log(users[w[a]]);
 
     const html = document.createElement("div");
     html.innerHTML = `<div class="recoumended-channel">
@@ -280,7 +278,6 @@ async function exportData() {
     const channelTagsContiner = document.querySelectorAll(
       ".recoumended-channel .channel-tags"
     )[i];
-    console.log(tagCount);
     setTags(channelTagsContiner, w, tagCount, i);
   }
 }
@@ -355,7 +352,6 @@ function setToMain(elment, x, users, i) {
     document.querySelector(".Main .right-contents").classList.remove("op-0");
     const html = document.createElement("div");
     const tagCount = users[x[i]].tags.length >= 2 ? 2 : 1;
-    console.log(tagCount);
     setShadow(continerContents[i]);
     elment.classList.add("real");
     elment.classList.add("focuse");
@@ -385,7 +381,6 @@ function setToMain(elment, x, users, i) {
       ".Main .right-contents .channel-tags"
     );
 
-    console.log(channelTagsContiner);
     setTags(channelTagsContiner, x, tagCount, i);
     setContnents = true;
   }
