@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-select: none; /* Safari */
+  -webkit-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
@@ -245,7 +245,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .buttons {
   position: absolute;
-    min-width: 100%;
+  min-width: 100%;
 }
 .right > svg {
   right: 0;
