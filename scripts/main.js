@@ -44,7 +44,6 @@ async function importData() {
       },
     });
 
-
     users = await users.json();
     users = users.data;
 
@@ -225,7 +224,6 @@ async function exportData() {
 
   // recommneded channels
   for (a = 0; a < 5; a++) {
-
     const html = document.createElement("div");
     html.innerHTML = `<div class="recoumended-channel">
 
@@ -406,7 +404,7 @@ function genrateRandom(count, min, max) {
   let arry = [];
   let x;
   while (arry.length < count) {
-    x = Math.round(Math.random() * max + min);
+    x = Math.round(Math.random() * (max - min) + min);
     if (arry.includes(x) === false) {
       arry.push(x);
     }
