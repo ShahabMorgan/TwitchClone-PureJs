@@ -5,24 +5,24 @@ const continerTumbnail = document.querySelectorAll(".tumbnail-picture");
 const tumbnailBody = document.querySelectorAll(".tumbnail-picture-body");
 const continerContents = Array.from(document.querySelectorAll(".wraper > div"));
 const contnerRecomended = document.querySelector(".recoumended-channel-grid");
-
 const buttons = document.querySelectorAll(".buttons > div");
 const controlersContiner = document.querySelectorAll(".controlers-flex");
 let setContnents = true;
-
-// Twitch slider
-// salam
-
 const continerImages = document.querySelector(".wraper");
-// const images = Array.from(document.querySelectorAll(".wraper > div"));
-let nextValue;
 
 twitchLogo.addEventListener("click", () => {
   btnText.forEach((v, i) => {
     v.classList.remove("header-btn-active");
   });
 });
-
+btnText.forEach((v, i) => {
+  v.addEventListener("click", () => {
+    btnText.forEach((v, i) => {
+      v.classList.remove("header-btn-active");
+    });
+    v.classList.add("header-btn-active");
+  });
+});
 btnText.forEach((v, i) => {
   v.addEventListener("click", () => {
     btnText.forEach((v, i) => {
@@ -43,7 +43,6 @@ async function importData() {
         "Client-Id": "9m8dogzjkmv0wdjjw1b5nyy1cyyfkd",
       },
     });
-
     users = await users.json();
     users = users.data;
 
@@ -848,6 +847,5 @@ function sliderBright() {
     });
   });
 }
-
 exportData();
 sliderBright();
