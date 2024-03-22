@@ -14,10 +14,11 @@
   --main-channel-continer-padding: 15px;
   --top-side-margin: 10px;
   font-size: 11px;
+  box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 body {
   margin: 0;
@@ -29,7 +30,6 @@ body {
   padding-left: 250px;
   background-color: var(--main-body-color);
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 p,
